@@ -1,9 +1,9 @@
 import streamlit as st 
 from textblob import TextBlob 
 
-st.title("Simple Sentiment Analysis")
-
 st.title("Felling Detector")
+
+st.text_area("Enter a sentence or review")
 if st.button("Analyze"):
     blob = TextBlob(text)
     polarity = blob.sentiment.polarity
